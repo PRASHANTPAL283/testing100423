@@ -1,0 +1,25 @@
+<div class="main">
+    <div class="card">
+        <form [formGroup]="userModel" (ngSubmit)="addNewUser(userModel.value)">
+            <div class="mb-3">
+              <label  class="form-label">Enter The Name</label>
+              <input formControlName="name" type="text" class="form-control">
+             
+            </div>
+            <div class="mb-3">
+                <label  class="form-label">Enter The City</label>
+                <input formControlName="city" type="text" class="form-control">
+               
+              </div>
+              <div class="mb-3">
+                <label  class="form-label">Enter The Email</label>
+                <input formControlName="email" type="text" class="form-control">
+               
+              </div>
+           
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+    </div>
+</div>
+

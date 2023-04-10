@@ -1,0 +1,31 @@
+<div class="container">
+    <table class="table table-info">
+        <thead>
+          <tr>
+            <th scope="col">Sno</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let  items of list;let i=index;">
+            <th scope="row">{{i+1}}</th>
+            <td>{{items.name}}</td>
+            <td>{{items.city}}</td>
+            <td>{{items.email}}</td>
+            <td (click)="update(items.name)" style="font-weight: bold;cursor: pointer;color:green;">update</td>
+            <td (click)="deleteById(items.name)" style="font-weight: bold;cursor: pointer;color:red;">delete</td>
+          </tr>
+        
+        </tbody>
+      </table>
+
+</div>
+<div style="text-align:center;">
+  <button (click)="navigate()" class="btn btn-primary">ADD</button>
+</div>
+
+
