@@ -1,1 +1,2 @@
 these  are details for project
+details of project are tther from git
